@@ -1,0 +1,46 @@
+{% extends 'layout_admin.html' %}
+
+{% block konten %}
+<div class="container">
+    <div class="header">
+        <h2>Spec kamera</h2>
+        <form action="/simpan" method="post" >
+            <div class="wrap">
+
+                <div class="group">
+                  <input type="text" name="brand" placeholder="Enter brand">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                  <input type="text" name="seri" placeholder="Enter seri">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                  <input type="text" name="sensor"  placeholder="Enter sensor">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                    <input type="number" name="harga" placeholder="Enter harga">
+                    <i class="fa circle-pass"></i>
+                    <i class="fa fa-unlock-alt"></i>
+                  </div>
+             </div>
+
+             <div class="group">
+                <button type="submit">Kirim</button>
+              </div>
+        </form>
+        
+    </div>
+    </div>
+</div>
+
+        
+
+{% endblock %}
